@@ -1,6 +1,6 @@
 <div>
   <h1>User name : {{user.name}}</h1>
-  <div>
+  <div *ngIf="user.phone.length">
     <p>Phone: </p>
     <p *ngFor="let item of user.phone">{{item}}</p>
   </div>
