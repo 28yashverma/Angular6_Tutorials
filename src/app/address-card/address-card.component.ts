@@ -9,6 +9,8 @@ import { User } from './user.model';
 export class AddressCardComponent implements OnInit {
 
   @Input('user') user: User;
+  isCollapsed: Boolean = false;
+  buttonText: string = 'Expand';
   constructor() {
    }
 
@@ -20,6 +22,15 @@ export class AddressCardComponent implements OnInit {
     //   address: this.userObj.address,
     //   phone: this.userObj.phone
     // };
+  }
+
+  toggleCollapse() {
+    this.isCollapsed = !this.isCollapsed;
+    if (this.isCollapsed === false) {
+      this.buttonText = 'Expand';
+    } else {
+      this.buttonText = 'Collapse';
+    }
   }
 
 }
