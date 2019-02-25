@@ -10,7 +10,7 @@ export class AddressCardComponent implements OnInit {
 
   @Input('user') user: User;
   isCollapsed: Boolean = false;
-  buttonText: string = 'Expand';
+  buttonText = 'Expand';
   constructor() {
    }
 
