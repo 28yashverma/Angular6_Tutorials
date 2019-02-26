@@ -13,6 +13,8 @@ import { AppRoutingModuleModule } from './app-routing-module/app-routing-module.
 import { HomeComponent } from './home/home.component';
 import { SettingsComponent } from './settings/settings.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AddressCardComponent,
     HomeComponent,
     SettingsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProfileComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
