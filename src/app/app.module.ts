@@ -9,19 +9,27 @@ import { AddressCardComponent } from './address-card/address-card.component';
 import { ViewModule } from './view/view.module';
 import { TestService } from './test.service';
 import {HttpClientModule} from '@angular/common/http';
+import { AppRoutingModuleModule } from './app-routing-module/app-routing-module.module';
+import { HomeComponent } from './home/home.component';
+import { SettingsComponent } from './settings/settings.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorldComponent,
     DateComponent,
-    AddressCardComponent
+    AddressCardComponent,
+    HomeComponent,
+    SettingsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ViewModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModuleModule
   ],
   providers: [
     TestService
